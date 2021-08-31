@@ -14,7 +14,6 @@ al caricamento della pagina ci saranno tutti i dischi.
     <title></title>
 </head>
 <body>
-
     <?php 
         require_once __DIR__ . "/database/database.php";
     ?>
