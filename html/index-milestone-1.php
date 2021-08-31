@@ -7,20 +7,24 @@ al caricamento della pagina ci saranno tutti i dischi.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title></title>
+    <link rel="stylesheet" href="/../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>First Milestone</title>
 </head>
 <body>
+
     <?php 
         require_once __DIR__ . "/../database/database.php";
     ?>
 
     <nav>
         <div class="logo-spotify">
-            <img src="../img/spotify-logo.jpg" alt="">
+            <img class="wd" src="./img/spotify-logo.jpg" alt="Spotify Logo">
         </div>
     </nav>
 
@@ -35,7 +39,10 @@ al caricamento della pagina ci saranno tutti i dischi.
                 <div class="inner">
                     <img class="wd" src="<?php echo "{$disc['poster']}";?>" alt="<?php echo "{$disc['title']} Poster";?>">
                     <h2>
-                        <?php echo "{$disc['title']}";?>
+                        <?php
+                         $toUpper = $disc['title'];
+                         echo strtoupper($toUpper);
+                         ?>
                     </h2>
                     <p><?php echo "{$disc['author']}";?></p>
                     <p><?php echo "{$disc['year']}";?></p>
@@ -50,4 +57,3 @@ al caricamento della pagina ci saranno tutti i dischi.
 
 </body>
 </html>
-
