@@ -10,7 +10,7 @@ al caricamento della pagina ci saranno tutti i dischi.
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@ al caricamento della pagina ci saranno tutti i dischi.
 
     <nav>
         <div class="logo-spotify">
-            <img class="wd" src="./img/spotify-logo.jpg" alt="Spotify Logo">
+            <img src="../img/spotify-logo.png" alt="">
         </div>
     </nav>
 
@@ -36,14 +36,14 @@ al caricamento della pagina ci saranno tutti i dischi.
             ?>
             <div class="album-container">
                 
-                <div class="inner">
-                    <img class="wd" src="<?php echo "{$disc['poster']}";?>" alt="<?php echo "{$disc['title']} Poster";?>">
-                    <h2>
+                <div class="inner-card">
+                    <img class="album" src="<?php echo "{$disc['poster']}";?>" alt="<?php echo "{$disc['title']} Poster";?>">
+                    <h4>
                         <?php
                          $toUpper = $disc['title'];
                          echo strtoupper($toUpper);
                          ?>
-                    </h2>
+                    </h4>
                     <p><?php echo "{$disc['author']}";?></p>
                     <p><?php echo "{$disc['year']}";?></p>
                 </div>
