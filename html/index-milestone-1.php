@@ -15,7 +15,7 @@ al caricamento della pagina ci saranno tutti i dischi.
 </head>
 <body>
     <?php 
-        require_once __DIR__ . "/database/database.php";
+        require_once __DIR__ . "/../database/database.php";
     ?>
 
     <nav>
